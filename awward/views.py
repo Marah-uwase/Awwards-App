@@ -23,7 +23,7 @@ from .serializers import ProfileSerializer,ProjectSerializer
 def home_projects (request):
     # Display all projects here:
 
-     request.GET.get('search_term'):
+    if request.GET.get('search_term'):
         projects = Project.search_project(request.GET.get('search_term'))
 
     else:
