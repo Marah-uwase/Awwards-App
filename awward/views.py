@@ -104,7 +104,7 @@ class ProjectList(APIView):
         return Response(serializers.errors, status = status.HTTP_400_BAD_REQUEST)
 
 @login_required(login_url='/accounts/login/')
-def edit_profile(request,id):
+def edit_profile(request,id)
     current_user = request.user
 
     if request.method == 'POST':
