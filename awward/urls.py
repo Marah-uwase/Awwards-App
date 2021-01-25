@@ -7,7 +7,7 @@ urlpatterns = [
     
     # url(r'^home/$', views.home, name='home'),
     
-    url(r'^$', views.home_projects, name='homePage')
+    url(r'^$', views.home_projects, name='homePage'),
     url(r'^ajax/newsletter/$', views.newsletter, name='newsletter'),
     url(r'^api/profile/$', views.ProfileList.as_view()),
     url(r'^edit/profile$', views.edit_profile, name='edit_profile'),
