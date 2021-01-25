@@ -60,7 +60,7 @@ def new_image(request):
         form = NewImageForm()
     return render(request, 'django_registration/new_image.html', {"form": form})
 
-def newslette(request):
+def newsletter(request):
     name = request.POST.get('your_name')
     email= request.POST.get('email')
 
