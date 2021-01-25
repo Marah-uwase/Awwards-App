@@ -13,11 +13,11 @@ class SignupForm(UserCreationForm):
 class NewsLetterForm(forms.Form):
     your_name = forms.CharField(label='First Name',max_length=30)
     email = forms.EmailField(label='Email') 
-class NewProjectForm(forms.ModelForm)
+class NewProjectForm(forms.ModelForm):
     class Meta:
         model = Project
         exclude = ['user',]
-class ReviewForm(forms.ModelForm)
+class ReviewForm(forms.ModelForm):
     class Meta:
         model = Review
         fields = [ 'usability_rating', 'design_rating', 'content_rating']
