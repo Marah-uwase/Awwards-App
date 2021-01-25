@@ -7,4 +7,4 @@ admin.site.register(Project)
 admin.site.register(Profile)
 admin.site.register(Image)
 admin.site.register(Location)
-admin.site.register(Review
+admin.site.register(Review)
