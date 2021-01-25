@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 from .models import  Profile, Project,Review,Image
 from django.forms import ModelForm, Textarea, IntegerField
 
-class SignupForm(UserCreationForm)
+class SignupForm(UserCreationForm):
     email = forms.EmailField(max_length=200, help_text = 'Required')
 
     class Meta:
