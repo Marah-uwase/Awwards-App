@@ -25,7 +25,7 @@ class UpdatebioForm(forms.ModelForm):
     class Meta:
         model = Profile
         exclude = ['user',]
-class NewImageForm(forms.ModelForm):
+class NewImageForm(forms.ModelForm)
     class Meta:
         model = Image
         exclude = ['user',]               
