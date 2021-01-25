@@ -136,7 +136,7 @@ def project(request, id):
     except DoesNotExist:
         raise Http404()
 
-    current_user = request.user
+    current_user = request.use
     comments = Review.get_comment(Review, id)
     latest_review_list=Review.objects.all()
 
