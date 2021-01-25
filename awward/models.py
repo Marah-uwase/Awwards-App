@@ -5,7 +5,7 @@ from django.db.models.signals import post_save
 
 # Create your models here.
 
-class Project(models.Model)
+class Project(models.Model):
     
     title = models.TextField(max_length=200, null=True, blank=True, default="title")
     project_image = models.ImageField(upload_to='picture/', null=True, blank=True)
@@ -56,7 +56,7 @@ class Project(models.Model)
     def __str__(self):
         return self.title
 
-class Profile(models.Model):
+class Profile(models.Model)
     class Meta:
         db_table = 'profile'
 
