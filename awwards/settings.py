@@ -33,7 +33,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'awward',
+    'awwar',
     'bootstrap3',
     'bootstrap4',
     'rest_framework',
