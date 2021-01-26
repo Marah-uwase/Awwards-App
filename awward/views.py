@@ -19,7 +19,7 @@ from .serializers import ProfileSerializer,ProjectSerializer
 
 # Create your views here.
 
-@login_required(login_url='/accounts/login/')
+
 def home_projects (request):
     # Display all projects here:
 
