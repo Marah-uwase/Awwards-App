@@ -23,11 +23,11 @@ from django.contrib.auth import views as auth_views
 # from django.contrib.auth import views
 
 urlpatterns = [
-    path(r'^admin/', admin.site.urls),
-    path(r'', include('awward.urls')),
-    path( r'^accounts/', include('django_registration.backends.one_step.urls')),
-    path(r'^api-token-auth/', obtain_auth_token),
+    url(r'^admin/', admin.site.urls),
+    url(r'', include('awward.urls')),
+    url( r'^accounts/', include('django_registration.backends.one_step.urls')),
+    url(r'^api-token-auth/', obtain_auth_token),
     # url(r'^logout/$',views.logout, {"next_page": '/'}),
-    path('logout/', auth_views.LogoutView.as_view(), {"next_page": '/'})
+    url('logout/', auth_views.LogoutView.as_view(), {"next_page": '/'})
     
 ]
