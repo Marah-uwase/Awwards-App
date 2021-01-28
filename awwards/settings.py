@@ -83,7 +83,7 @@ ROOT_URLCONF = 'awwards.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['/home/maranatha/Desktop/Awwards/awward/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
